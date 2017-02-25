@@ -10,9 +10,34 @@
             width: 100px;
             height: 100px;
             background: green;
+            -webkit-animation: myAnimate 2s infinite;
+            animation: myAnimate 2s infinite;
         }
-        @-webkit-keyframes myAnimate{
 
+        @-webkit-keyframes myAnimate {
+            from {
+                background: red;
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to {
+                background: yellow;
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes myAnimate {
+            from {
+                background: red;
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to {
+                background: yellow;
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
